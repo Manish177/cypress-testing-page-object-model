@@ -1,6 +1,6 @@
 /// <reference types= "cypress"/>
 
-class dressPage {
+class dressCategoryPage {
     sizeMedium(){
         cy.get('#layered_id_attribute_group_2').should('exist').check()
     }
@@ -32,4 +32,4 @@ class dressPage {
         cy.get('[title="View my shopping cart"]').should('exist').click()
     }
 }
-export default dressPage
+export default dressCategoryPage

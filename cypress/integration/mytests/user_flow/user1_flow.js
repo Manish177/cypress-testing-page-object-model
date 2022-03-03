@@ -4,7 +4,8 @@ import createAccountPage from '../../Page objects/createAccountPage'
 import homePage from '../../Page objects/homePage'
 import signInPage from '../../Page objects/signInPage'
 import myAccountPage from '../../Page objects/myAccountPage'
-import orderControllerPage from '../../Page objects/orderControllerPage'
+import categoryWomenPage from '../../Page objects/categoryWomenPage'
+import orderControllerPage from'../../Page objects/orderControllerPage'
 
 describe('Create user 1', () => {
 

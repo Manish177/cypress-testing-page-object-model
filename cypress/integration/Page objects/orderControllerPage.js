@@ -1,7 +1,6 @@
 /// <reference types= "cypress"/>
 
 class orderControllerPage {
-    
     orderDetails(){
         cy.get('.cart_navigation > .button > span').should('exist').click()     
     }

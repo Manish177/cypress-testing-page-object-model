@@ -4,6 +4,8 @@ import createAccountPage from '../../Page objects/createAccountPage'
 import homePage from '../../Page objects/homePage'
 import signInPage from '../../Page objects/signInPage'
 import myAccountPage from '../../Page objects/myAccountPage'
+import categoryWomenPage from '../../Page objects/categoryWomenPage'
+import orderControllerPage from '../../Page objects/orderControllerPage'
 
 describe('Create user 2', () => {
 
@@ -61,38 +63,42 @@ describe('Create user 2', () => {
         }
     })
 
-    it('new user 2 login to buying process', function () {
+    it('new user 2 login and women category page interactions', function () {
 
         const hp= new homePage()
+        hp.goHomePage()
         hp.clickSignIn()
-        const sip= new signInPage()
 
+        const sip= new signInPage()
         sip.alreadyRegisteredEmail(this.user2.email)
         sip.alreadyRegisteredPass(this.user2.password)
         sip.submitLogIn()
         hp.goHomePage()
-        hp.dressSection()
+        hp.womenSection()
 
-        const dp = new dressPage()
-        dp.sizeMedium()
-        dp.dressColor()
-        dp.sortBy()
-        dp.addToCart()
-        dp.continueShopping()
-        dp.addToCart1()
-        dp.continueShopping()
-        dp.chekcout()
+        const cwp = new categoryWomenPage()
+        cwp.categorySelector()
+        cwp.sizeSelector()
+        cwp.colorSelector()
+        cwp.styleSelector()
+        cwp.compositionSelector()
+        cwp.propertiesSelector()
+        cwp.availabilitySelector()
+        cwp.manufacturerSelector()
+        cwp.conditionSelector()
+        cwp.priceSelector()
+        cwp.sortSelector()
 
-        const ocp = new orderControllerPage()
-        ocp.orderDetails()
-        ocp.addressDetails()   
-        ocp.shippingDetails()   
-        ocp.paymentOptions()   
-        ocp.confirmOrder()
+        // const ocp = new orderControllerPage()
+        // ocp.orderDetails()
+        // ocp.addressDetails()   
+        // ocp.shippingDetails()   
+        // ocp.paymentOptions()   
+        // ocp.confirmOrder()
 
-        const map = new myAccountPage()
-        map.checkAccount()
-        map.orderHistory()
+        // const map = new myAccountPage()
+        // map.checkAccount()
+        // map.orderHistory()
     })
 })
 

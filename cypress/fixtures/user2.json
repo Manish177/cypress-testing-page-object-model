@@ -1,0 +1,20 @@
+{
+    "email": "usersam2@gmail.com",
+    "firstName": "sam",
+    "lastName": "sam",
+    "gender":"male",
+    "password":"123456789",
+    "newLetter":"yes",
+    "specialOffer":"yes",
+    "DOB":"1,11,2020",
+    "company":"abcd",
+    "address":"967 72e",
+    "city":"Montreal",
+    "zip":"12345",
+    "country":"United States",
+    "state":"Utah",
+    "mobilePhone":"0123456789",
+    "addressAlias":"home"
+    
+  }
+  

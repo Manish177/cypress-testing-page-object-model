@@ -1,0 +1,19 @@
+{
+    "email": "usertam2@gmail.com",
+    "firstName": "tam",
+    "lastName": "tam",
+    "gender":"male",
+    "password":"123456789",
+    "newLetter":"yes",
+    "specialOffer":"yes",
+    "DOB":"1,11,2020",
+    "company":"xyz",
+    "address":"967 722e",
+    "city":"Montreal",
+    "zip":"12345",
+    "country":"United States",
+    "state":"Utah",
+    "mobilePhone":"0123456788",
+    "addressAlias":"home"
+    
+  }
